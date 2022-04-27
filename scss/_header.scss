@@ -21,15 +21,15 @@
   nav {
     position: relative;
     background-color: $white;
-    padding-top: 1.0625rem;
-    padding-bottom: 1.0625rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   &__logo {
 
     img {
-      width: 8.8125rem;
-      height: 1.375rem;
+      width: 17.5rem;
+      height: auto;
     }
   }
 
@@ -39,7 +39,7 @@
       display: block;
       width: 26px;
       height: 2px;
-      background-color: $darkBLue;
+      background-color: $darkBlue;
       transition: all .3s ease-in-out;
       transform-origin: 3px 1px;
 
@@ -56,7 +56,7 @@
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background-image: linear-gradient($darkBLue, transparent);
+    background-image: linear-gradient($darkBlue, $lightGreen);
     z-index: 0;
   }
 
@@ -72,7 +72,7 @@
     z-index: 3;
     a {
       display: block;
-      color: $darkBLue;
+      color: $darkBlue;
       padding: .625rem;
       text-align: center;
     }
@@ -83,7 +83,7 @@
     a {
       position: relative;
       font-size: $font-sm;
-      color: $grayishBlue;
+      color: $darkBlue;
       transition: color .3s ease-in-out;
 
       &:not(:last-child){
@@ -98,13 +98,13 @@
         left: 0;
         right: 0;
         bottom: -30px;
-        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        background: linear-gradient(to right, $white, $lightGreen);
         opacity: 0;
         transition: opacity .3s ease-in-out;
       }
 
       &:hover {
-        color: $darkBLue;
+        color: $lightGreen;
         transition: color .3s ease-in-out;
 
         &::before {

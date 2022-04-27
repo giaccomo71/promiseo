@@ -6,15 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Promiseo</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="header container">
-    <nav class="nav">
+  <header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
       <a href="#" class="header__logo">
-        <img src="icons/promiseo-logo.svg" alt="Promiseo" width="280">
+        <img src="/icons/promiseo-logo.svg" alt="Promiseo">
       </a>
       <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
         <span></span>
@@ -43,7 +46,25 @@
       <a href="#">Item 7</a>
     </div>
   </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h1>Curabitur eget arcu et neque pretium cursus.<br>
+          Curabitur a augue magna.</h1>
+        <a href="#" class="button btn__primary">CALL TO ACTION</a>
+        <a href="#" class="button btn__secondary">Read more</a>
+      </div>
+      <div class="fadecovers">
+        <div class="cover" style="background:url('/img/hero-banner.jpg')"></div>
+        <div class="cover" style="background:url('/img/hero-banner01.jpg')"></div>
+        <div class="cover" style="background:url('/img/hero-banner02.jpg')"></div>
+        <div class="cover" style="background:url('/img/hero-banner03.jpg')"></div>
+      </div>
+    </section>
+  </main>
   
-  <script src="js/script.js"></script>
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

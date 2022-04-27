@@ -1,0 +1,36 @@
+#hero {
+	position: relative;
+	background: url('/img/hero-banner.jpg') center no-repeat;
+	height: auto;
+	min-height: 480px;
+
+	.container {
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+		text-align: center;
+
+		@include breakpoint-up(large) {
+			text-align: left;
+		}
+	}
+
+	.fadecovers {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		min-height: 480px;
+		overflow: hidden;
+	
+		.cover {
+			width: 1600px;
+			height: 720px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: 800px;
+		}
+	}
+}
