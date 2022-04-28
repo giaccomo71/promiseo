@@ -427,7 +427,7 @@ p {
 
 #hero {
   position: relative;
-  background: url("img/hero-banner.jpg") center no-repeat;
+  background: url("../img/hero-banner.jpg") center no-repeat;
   height: auto;
   min-height: 480px;
 }
@@ -572,7 +572,7 @@ p {
 }
 
 .luctus {
-  background-image: url("img/alexis-brown.jpg");
+  background-image: url("../img/alexis-brown.jpg");
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #81b5b6;
@@ -675,7 +675,7 @@ p {
 }
 
 .luctus__item a::after {
-  content: url("icons/Long-Arrow-Right.png");
+  content: url("../icons/Long-Arrow-Right.png");
   position: absolute;
   top: 1px;
   right: -30px;
@@ -695,7 +695,7 @@ p {
 .luctus__icon {
   width: 50px;
   height: 50px;
-  background-image: url("icons/ico.png");
+  background-image: url("../icons/ico.png");
 }
 
 .luctus__icon img {
@@ -765,7 +765,7 @@ p {
 }
 
 .blog__grid--item::after {
-  content: url("icons/more.png");
+  content: url("../icons/more.png");
   position: absolute;
   bottom: 25%;
   right: 7%;
@@ -899,7 +899,7 @@ p {
 }
 
 .footer__contact .phone::before {
-  background-image: url("icons/phone.svg");
+  background-image: url("../icons/phone.svg");
   background-size: 20px 20px;
   display: inline-block;
   width: 20px;
@@ -910,7 +910,7 @@ p {
 }
 
 .footer__contact .e-mail::before {
-  background-image: url("icons/message.svg");
+  background-image: url("../icons/message.svg");
   background-size: 20px 20px;
   display: inline-block;
   width: 20px;
@@ -921,7 +921,7 @@ p {
 }
 
 .footer__contact .web::before {
-  background-image: url("icons/web.svg");
+  background-image: url("../icons/web.svg");
   background-size: 20px 20px;
   display: inline-block;
   width: 20px;
