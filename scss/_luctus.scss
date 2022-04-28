@@ -1,0 +1,132 @@
+.luctus {
+  background-image: url('/img/alexis-brown.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: $lightGreen;
+  padding-top: .5rem;
+  position: relative;
+
+  @include breakpoint-down(small) {
+    background-position: center bottom;
+    background-size: 100%;
+    padding-top: 0;
+  }
+
+  .square {
+    background-color: $darkBlue;
+    width: 50%;
+    min-height: 560px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+
+    @include breakpoint-down(small){
+      width: 100%;
+      min-height: 450px;
+    }
+  }
+
+  &__left {
+    flex: 0 0 50%;
+    padding: 6.25rem 12.5rem 3.6rem 0;
+    text-align: left;
+    z-index: 2;
+
+    @include breakpoint-down(small){
+      flex: 1 1 350px;
+      padding: 1rem .5rem;
+    }
+
+    h3 {
+      color: $white;
+      font-weight: 300;
+      padding: 0 0 3.75rem 0;
+      margin: 0;
+
+      @include breakpoint-down(small){
+        padding: 0 0 1rem 0;
+        text-align: center;
+      }
+    }
+  }
+
+  &__item {
+    column-gap: 1rem;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-down(small){
+      padding: 0 0 0 3rem;
+    }
+
+    h5 {
+      font-family: 'Raleway', sans-serif;
+      font-size: $font-lg;
+      font-weight: 900;
+      color: $lightGreen;
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+
+      @include breakpoint-down(small){
+        margin: 1rem 0;
+      }
+    }
+
+    a {
+      color: $white;
+      font-family: 'Quicksand', sans-serif;
+      font-size: $font-med;
+      font-weight: 500;
+      position: relative;
+      transition: all .2s ease-in-out;
+
+      &::after {
+        content: url('/icons/Long-Arrow-Right.png');
+        position: absolute;
+        top: 1px;
+        right: -30px;
+      }
+      &:hover::after {
+        transition: all .2s ease-in-out;
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &__desc {
+    display: block;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('/icons/ico.png');
+
+    img {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      left: 23%;
+      top: 17%;
+      color: $darkBlue;
+    }
+  }
+
+  &__right {
+    flex: 0 0 50%;
+    padding: 4rem 0 3.6rem 9rem;
+
+    @include breakpoint-down(small){
+      flex: 1 1 350px;
+      padding: 3rem;
+    }
+
+    h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: $font-xl;
+      font-weight: 300;
+      color: $white;
+      margin: 0;
+    }
+  }
+}

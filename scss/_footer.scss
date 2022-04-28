@@ -1,0 +1,76 @@
+.footer {
+  padding: 1.875rem 0;
+  background: linear-gradient(90deg, $green 55%, $darkBlue 45%);
+
+  @include breakpoint-down(small) {
+    background: linear-gradient(90deg, $green 0%, $darkBlue 100%);
+  }
+
+  h6 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-sm;
+    font-weight: 700;
+    color: $darkBlue;
+
+    @include breakpoint-down(small) {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__contact {
+
+    @include breakpoint-down(small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      row-gap: .5rem;
+    }
+    
+    a {
+      color: $white;
+      font-size: $font-sm;
+      font-weight: 500;
+      padding: 0 .5rem;
+      transition: all .3s ease-in-out;
+    }
+    a:hover {
+      transition: all .3s ease-in-out;
+      opacity: .8;
+    }
+    .phone::before {
+      background-image: url('/icons/phone.svg');
+      background-size: 20px 20px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content:"";
+      vertical-align: middle;
+      margin-right: .5rem;
+    }
+    .e-mail::before {
+      background-image: url('/icons/message.svg');
+      background-size: 20px 20px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content:"";
+      vertical-align: middle;
+      margin-right: .5rem;
+    }
+    .web::before {
+      background-image: url('/icons/web.svg');
+      background-size: 20px 20px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content:"";
+      vertical-align: middle;
+      margin-right: .5rem;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.references {
+  background-color: $white;
+  padding: 4.25rem 1rem 5.25rem 1rem;
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1040px;
+
+    h2 {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      font-size: 4rem;
+      color: $lightGrey;
+      z-index: 1;
+
+      @include breakpoint-up(large) {
+        font-size: 8.75rem;
+        top: -20%;
+      }
+    }
+    h3 {
+      padding: 2.5rem 0 2.5rem 0;
+      margin-bottom: 3.75rem;
+      position: relative;
+      z-index: 2;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  &__title {
+    color: $lightBlue;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  #references__points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__point {
+    width: 3.125rem;
+    height: 3.125rem;
+    text-align: center;
+    background-color: $darkBlue;
+    color: $white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: $font-l;
+    font-weight: 500;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: none;
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      background-color: $lightRed;
+    }
+  }
+  .active {
+    background-color: $lightRed;
+  }
+  &__copy {
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: $font-lg;
+  }
+}

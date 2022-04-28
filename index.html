@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@300;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
@@ -62,9 +65,125 @@
         <div class="cover" style="background:url('/img/hero-banner03.jpg')"></div>
       </div>
     </section>
+
+    <section class="references">
+      <div class="references__content container">
+        <h2>PROMISEO</h2>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Vivamus ornare ex enim, ut laoreet nisl vulputate et. Sed sit amet posuere mauris, ac scelerisque ante. In
+          pellentesque libero lectus, eget imperdiet urna rhoncus et. Donec dolor tellus, lacinia condimentum ligula id,
+          vestibulum volutpat sem. Phasellus tincidunt rhoncus aliquam. Suspendisse et eros arcu. Aliquam tincidunt
+          neque eget laoreet fringilla. Curabitur et ante ut elit fermentum rutrum. Duis posuere erat vel commodo
+          facilisis. Donec posuere nec dui nec gravida. Nunc sit amet est accumsan, euismod mi a, egestas erat.</p>
+        <h3 class="references__title">Cras lobortis ?</h3>
+        <div id="references__points">
+          <button class="references__point active">1</button>
+          <button class="references__point">2</button>
+          <button class="references__point">3</button>
+          <button class="references__point">4</button>
+          <button class="references__point">5</button>
+          <button class="references__point">6</button>
+          <button class="references__point">7</button>
+        </div>
+        <div class="references__copy"></div>
+      </div>
+    </section>
+
+    <section class="luctus">
+      <div class="square"></div>
+      <div class="container flex flex-jc-sb flex-ai-c flex-fb-f">
+        <div class="luctus__left">
+          <h3>Aliquam luctus</h3>
+          <div class="luctus__item flex flex-ai-c">
+            <div class="luctus__icon"><img src="/icons/people.svg" alt=""></div>
+            <div class="luctus__desc">
+              <h5>Sed sapien nulla</h5>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="luctus__item flex flex-ai-c">
+            <div class="luctus__icon"><img src="/icons/admin.svg" alt=""></div>
+            <div class="luctus__desc">
+              <h5>Proin aliquet est urna</h5>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="luctus__item flex flex-ai-c">
+            <div class="luctus__icon"><img src="/icons/calendar.svg" alt=""></div>
+            <div class="luctus__desc">
+              <h5>Mauris ac mi lectus</h5>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="luctus__right">
+          <h4>Aequam memento rebus in arduis servare <strong>mentem</strong></h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <h3>Blog</h3>
+      <div class="container blog__grid">
+        <div class="blog__grid--item">
+          <a href="#">
+            <img src="/img/article-01.jpg" alt="Article">
+            <p>Aenean a consequat ex, et tincidunt ligula</p>
+            <div class="article--date">16. Máj 2017</div>
+          </a>
+        </div>
+        <div class="blog__grid--item">
+          <a href="#">
+            <img src="/img/article-02.jpg" alt="Article">
+            <p>Maecenas odio odio, auctor fringilla dui id, sollicitudin aliquet ipsum</p>
+            <div class="article--date">16. Máj 2017</div>
+          </a>
+        </div>
+        <div class="blog__grid--item">
+          <a href="#">
+            <img src="/img/article-03.jpg" alt="Article">
+            <p>Curabitur ante dolor, suscipit nec urna nec, lobortis pharetra ligula</p>
+            <div class="article--date">16. Máj 2017</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="subfooter">
+      <div class="container flex flex-jc-sb flex-ai-c flex-mob">
+        <div class="subfooter__logo">
+          <img src="/icons/promiseo-logo.svg" alt="Promiseo">
+        </div>
+        <div class="header__links hide-for-mobile">
+          <a href="#">ITEM 1</a>
+          <a href="#">ITEM 2</a>
+          <a href="#">ITEM 3</a>
+          <a href="#">ITEM 4</a>
+          <a href="#">ITEM 5</a>
+          <a href="#">ITEM 6</a>
+          <a href="#">ITEM 7</a>
+        </div>
+        <div class="subfooter__social">
+          <a href="#"><img src="/icons/facebook-brands.svg" alt="Facebook"></a>
+          <a href="#"><img src="/icons/twitter-brands.svg" alt="Twitter"></a>
+        </div>
+      </div>
+    </section>
   </main>
-  
+
+  <footer class="footer">
+    <div class="container flex flex-jc-sb">
+      <h6>COPYRIGHT TEXT</h6>
+      <div class="footer__contact">
+        <a class="phone" href="#">+421 901 234 567</a>
+        <a class="e-mail" href="#">hi@emailhallo.sk</a>
+        <a class="web" href="#">www.randomseo.com</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/script.js"></script>
 </body>
+
 </html>
